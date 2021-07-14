@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* global */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(233, 47%, 7%) ;
+    font-size: 15px;
+}
+/* end global */
+/* container */
+
+/* end container */
+/* card */
+.card{
+    width: 72%;
+    margin: auto;
+    background: hsl(244, 38%, 16%) url(../images/image-header-desktop.jpg) no-repeat right top 50%;
+    border-radius: 12px;
+    margin-top: 12%;
+    height: 450px;
+}
+.card .card-info {
+    width: 50%;
+    padding: 60px;
+    text-align: start;
+}
+.card .card-info h2 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 16px;
+}
+.card .card-info p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.2em;
+    font-size: 20px;
+}
+.card .card-info ul{
+    margin-top: 90px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+/* end card */
