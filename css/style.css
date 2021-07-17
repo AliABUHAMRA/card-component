@@ -1,41 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
-/* global */
+/*start global rules */
 * {
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: hsl(233, 47%, 7%);
-  font-size: 15px;
 }
-/* end global */
+/* end global rules */
 
 /* card */
 .card {
   position: relative;
   width: 1110px;
   height: 446px;
-  margin: auto;
+  margin: auto 165px;
   background: hsl(244, 38%, 16%);
   border-radius: 0 8px 8px 0;
-  margin-top: 12%;
 }
+
 .card .card-info {
   padding: 82px;
   text-align: start;
   width: 50%;
 }
 .card .card-info h2 {
-  color: hsl(0, 0%, 100%);
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
 }
+
 .card .card-info .special-word {
   color: #ab5cdb;
 }
+
 .card .card-info p {
   color: rgba(255, 255, 255, 0.75);
   line-height: 25px;
@@ -44,6 +41,7 @@ body {
   font-weight: 400;
   padding-top: 28px;
 }
+
 .card .card-info ul {
   margin-top: 90px;
   padding: 0;
@@ -51,14 +49,18 @@ body {
   justify-content: space-between;
   list-style-type: none;
 }
-.images {
-  mix-blend-mode: multiply;
-}
+/* end card */
 .images .image-desktop {
   position: absolute;
   right: 0;
+  width: 540px;
+  height: 446px;
 }
-/* end card */
+
+.images .image-desktop img {
+  width: 100%;
+  height: 100%;
+}
 
 /* status */
 .status {
@@ -66,10 +68,12 @@ body {
   justify-content: space-between;
   margin-top: 72px;
 }
+
 .status .state-block {
   width: 83px;
   height: 56px;
 }
+
 .status .state-block .state-num {
   font-family: "Inter", sans-serif;
   font-size: 24px;
@@ -77,6 +81,7 @@ body {
   line-height: 29.05px;
   color: #ffffff;
 }
+
 .status .state-block .state-title {
   text-transform: uppercase;
   font-family: "Lexend Deca", sans-serif;
@@ -85,21 +90,31 @@ body {
   line-height: 25px;
   color: #ffffff;
 }
+
 /* end status */
 
-.images .image-mobile {
-  display: none;
-}
-@media (min-width: 375px) and (max-width: 768px) {
-  body {
+@media (max-width: 768px) {
+  .container {
     width: 375px;
+  }
+  .visible-mob {
+    display: block !important;
   }
   .card {
     height: 780px;
     width: 327px;
+    margin: auto;
   }
+
+  .card .div-info {
+    width: 327px;
+    padding: 0 31.5px;
+    text-align: center;
+  }
+
   .card .card-info {
-    width: 264px;
+    padding: 0;
+    width: 100%;
     text-align: center;
   }
   .card .card-info h2 {
@@ -107,24 +122,61 @@ body {
     line-height: 32px;
     padding-top: 40px;
   }
+
   .card .card-info p {
     font-size: 15px;
     line-height: 25px;
     padding-top: 16px;
   }
-  .images .image-mobile {
-    display: block;
-    width: 100%;
+
+  .visible-dec {
+    display: none !important;
   }
-  .images .image-desktop {
-    display: none;
+
+  .images .image-mobile {
+    width: 100%;
+    height: 100%;
   }
   .status {
     flex-direction: column;
     margin: 0 0 32px;
   }
+
   .status .state-block {
     margin: auto;
     padding: 40px 0;
   }
 }
+
+/* start my framework */
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.images .img-mask {
+  background-color: #ab5cdb;
+}
+
+.images img {
+  mix-blend-mode: multiply;
+  opacity: 75.11%;
+}
+
+.visible-mob {
+  display: none;
+}
+
+.visible-dec {
+  display: block;
+}
+.fon-h2 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+/* end my framework */
