@@ -1,0 +1,20 @@
+/* Global */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --c-main-background: hsl(233, 47%, 7%);
+  --c-card-background: hsl(244, 38%, 16%);
+  --c-soft-violet: hsl(277, 64%, 61%);
+  --c-white: #fff;
+}
+
+body {
+  background-color: var(--c-main-background);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}

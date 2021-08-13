@@ -11,63 +11,43 @@
       href="./images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Stats preview card component</title>
-    <!-- import file normlaize -->
+    <!-- Normlaize library file -->
     <link rel="stylesheet" href="css/normlaize.css" />
-    <!-- import file main css -->
+    <!-- Main File Css -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- import file fonts css -->
-    <link rel="stylesheet" href="fonts/font.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <!-- start images -->
-        <div class="images">
-          <div class="image-desktop img-mask visible-dec">
-            <img
-              src="images/image-header-desktop.jpg"
-              alt="image-the-header-for-desktop"
-            />
-          </div>
-          <div class="image-mobile img-mask">
-            <img
-              class="image-mobile visible-mob"
-              src="images/image-header-mobile.jpg"
-              alt="image-the-header-for-mobile"
-            />
-          </div>
+    <main class="card container d-flex">
+        <div class="card__images">
+          <img class="card__images-img card__images-desktop" src="images/image-header-desktop.jpg" alt="img-hero" />
+          <img
+            class="card__images-img card__images-mobile"
+            src="images/image-header-mobile.jpg"
+            alt="card-img"
+          />
         </div>
-        <!-- end images -->
-
-        <!-- start div infromiation -->
-        <div class="div-info">
-          <div class="card-info">
-            <h2 class="fon-h2">
-              Get <span class="special-word">insights</span> that help your
-              business grow.
-            </h2>
+        <section class="card__body card__body--text">
+            <h1>Get <span class="accent">insights</span> that help your business grow.</h1>
             <p>
               Discover the benefits of data analytics and make better decisions
               regarding revenue, customer experience, and overall efficiency.
             </p>
-            <div class="status">
-              <div class="state-block">
-                <div class="state-num">10k+</div>
-                <div class="state-title">companies</div>
-              </div>
-              <div class="state-block">
-                <div class="state-num">314</div>
-                <div class="state-title">templates</div>
-              </div>
-              <div class="state-block">
-                <div class="state-num">12m+</div>
-                <div class="state-title">queries</div>
-              </div>
-            </div>
+            <ul class="card--list">
+              <li class="card--list-item">
+                <h2>10k+</h2>
+                <p>Companies</p>
+              </li>
+              <li>
+                <h2>314</h2>
+                <p>Templates</p>
+              </li>
+              <li>
+                <h2>12M+</h2>
+                <p>Queries</p>
+              </li>
+            </ul>
           </div>
-        </div>
-        <!-- end div infromiation -->
-      </div>
-    </div>
+        </section>
+    </main>
   </body>
 </html>
