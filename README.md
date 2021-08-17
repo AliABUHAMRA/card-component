@@ -1,6 +1,6 @@
-# Stats preview card component
+# card component
 
-!(./design/desktop-preview.jpg)
+![podcast preview](./design/desktop-preview.jpg)
 
 ## Welcome!
 
