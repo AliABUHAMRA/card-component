@@ -59,14 +59,9 @@ h1 {
   font-size: var(--fs-h1-sm);
 }
 
-h2 {
-  font-size: var(--fs-h2-sm);
-}
-
 p {
   color: var(--white-clr);
   margin: 0;
-  opacity: 0.66;
 }
 
 .accent {
@@ -110,6 +105,10 @@ p {
   margin: 0 auto;
 }
 
+.card__body > p {
+  opacity: 0.66;
+}
+
 .card .card--list {
   display: flex;
   flex-direction: column;
@@ -121,9 +120,16 @@ p {
   margin: 1em 0;
 }
 
-.card__item p {
+.card__item > p {
+  font-size: var(--fs-h2-sm);
+  font-weight: 700;
+}
+
+.card__item span {
   font-size: 0.8rem;
   text-transform: uppercase;
+  opacity: 0.66;
+  font-weight: 300;
 }
 
 @media (min-width: 800px) {
@@ -145,6 +151,7 @@ p {
 
   .card__img-desktop {
     display: block;
+        height: -webkit-fill-available;
   }
 
   .card__img-mobile {
