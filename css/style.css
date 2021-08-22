@@ -116,6 +116,10 @@ section,
   margin: 1em 0;
 }
 
+.card__item + .card__item {
+  margin-left: 1em;
+}
+
 .card__item > p {
   font-size: 1.2rem;
   font-weight: 700;
@@ -155,12 +159,17 @@ section,
   }
 
   .card__body {
+    padding: 4.6em 8em 0 4.6em;
     width: 52%;
+  }
+
+  .card__body h1 {
+    margin-top: 0;
+    margin-bottom: 1em;
   }
 
   .card .card__body--text {
     text-align: start;
-    max-width: 40%;
   }
 
   .row {
@@ -168,7 +177,11 @@ section,
   }
 
   .card__list {
-    padding-right: 2em;
+    padding-right: 4em;
+  }
+
+  .card__item > p {
+    font-size: 1.6rem;
   }
 }
 /* 173 */
