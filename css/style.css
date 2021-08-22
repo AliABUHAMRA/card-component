@@ -163,9 +163,13 @@ section,
     width: 52%;
   }
 
+  .card__body > p {
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+
   .card__body h1 {
-    margin-top: 0;
-    margin-bottom: 1em;
+    margin: 0;
   }
 
   .card .card__body--text {
