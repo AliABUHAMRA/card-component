@@ -126,6 +126,7 @@ section,
 }
 
 .card__item span {
+  display: inline-block;
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -181,7 +182,7 @@ section,
   }
 
   .card__list {
-    padding-right: 4em;
+    padding-right: 3em;
   }
 
   .card__item > p {
