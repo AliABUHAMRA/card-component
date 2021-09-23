@@ -6,7 +6,7 @@
 
 ## Incentives from the project :
 ![github repo size](https://img.shields.io/github/repo-size/AliABUHAMRA/card-component)
-
+![github contributors](https://img.shields.io/github/contributors/AliABUHAMRA/card-component)
 1. learn semantic HTML
 2. learn Responsive desigen layout
 
