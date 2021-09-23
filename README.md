@@ -1,20 +1,20 @@
 # card component
+
 ![github repo size](https://img.shields.io/github/repo-size/AliABUHAMRA/card-component)
 ![github contributors](https://img.shields.io/github/contributors/AliABUHAMRA/card-component)
 ![github twiter](https://img.shields.io/twitter/follow/AliAbuhumra?style=social)
 
-Card Component helps you to improve exercise CSS 
-
-## simple card component created withe HTML, CSS.
+Card Component helps you to improve exercise CSS
 
 <!-- ![podcast preview](./design/desktop-preview.jpg) -->
 
-## Incentives from the project :
+### Built with
 
-1. learn semantic HTML
-2. learn Responsive desigen layout
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
 
-## Technologies
+### What I learned
 
-- HTML5
-- CSS3
+learned how to use flex well,
